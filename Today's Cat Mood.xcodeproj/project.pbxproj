@@ -15,6 +15,7 @@
 		2005F0762BAB4673001018A0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2005F0752BAB4673001018A0 /* Base */; };
 		2099AE312BAB4AF90006A3B7 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2099AE302BAB4AF90006A3B7 /* DetailsViewController.swift */; };
 		2099AE362BAB52D80006A3B7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2099AE352BAB52D80006A3B7 /* NetworkManager.swift */; };
+		2099AE3C2BAB5B930006A3B7 /* Cats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2099AE3B2BAB5B930006A3B7 /* Cats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2005F0772BAB4673001018A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2099AE302BAB4AF90006A3B7 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		2099AE352BAB52D80006A3B7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2099AE3B2BAB5B930006A3B7 /* Cats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				2099AE322BAB4F930006A3B7 /* ViewControllers */,
-				2099AE332BAB4FA90006A3B7 /* App */,
 				2099AE342BAB526F0006A3B7 /* Storyboards */,
-				2005F0722BAB4673001018A0 /* Assets.xcassets */,
 				2099AE372BAB52DC0006A3B7 /* Services */,
+				2099AE3D2BAB5B9F0006A3B7 /* Models */,
+				2005F0722BAB4673001018A0 /* Assets.xcassets */,
+				2099AE332BAB4FA90006A3B7 /* App */,
 			);
 			path = "Today's Cat Mood";
 			sourceTree = "<group>";
@@ -103,6 +106,14 @@
 				2099AE352BAB52D80006A3B7 /* NetworkManager.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		2099AE3D2BAB5B9F0006A3B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2099AE3B2BAB5B930006A3B7 /* Cats.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +192,7 @@
 				2005F06A2BAB4672001018A0 /* AppDelegate.swift in Sources */,
 				2005F06C2BAB4672001018A0 /* SceneDelegate.swift in Sources */,
 				2099AE312BAB4AF90006A3B7 /* DetailsViewController.swift in Sources */,
+				2099AE3C2BAB5B930006A3B7 /* Cats.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,13 +7,34 @@
 
 import UIKit
 
-class MainViewController: UICollectionViewController {
-
+final class MainViewController: UIViewController {
+    
+    // MARK: - IB Outlets
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet var catImage: UIImageView!
+    
+    // MARK: - Private Properties
+    private let networkManager = NetworkManager.shared
+    
+    // MARK: - View Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        activityIndicator.startAnimating()
+        activityIndicator.hidesWhenStopped = true
+        fetchImage()
     }
-
-
 }
 
+// MARK: - Networking
+extension MainViewController {
+    private func fetchImage() {
+        networkManager.fetchImage(from: Link.image.url) { [unowned self] result in
+            switch result {
+            case .success(let imageData):
+                catImage.image = UIImage(data: imageData)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+}
