@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		2005F06A2BAB4672001018A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2005F0692BAB4672001018A0 /* AppDelegate.swift */; };
 		2005F06C2BAB4672001018A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2005F06B2BAB4672001018A0 /* SceneDelegate.swift */; };
-		2005F06E2BAB4672001018A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2005F06D2BAB4672001018A0 /* ViewController.swift */; };
+		2005F06E2BAB4672001018A0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2005F06D2BAB4672001018A0 /* MainViewController.swift */; };
 		2005F0712BAB4672001018A0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2005F0702BAB4672001018A0 /* Base */; };
 		2005F0732BAB4673001018A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2005F0722BAB4673001018A0 /* Assets.xcassets */; };
 		2005F0762BAB4673001018A0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2005F0752BAB4673001018A0 /* Base */; };
+		2099AE312BAB4AF90006A3B7 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2099AE302BAB4AF90006A3B7 /* DetailsViewController.swift */; };
+		2099AE362BAB52D80006A3B7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2099AE352BAB52D80006A3B7 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2005F0662BAB4672001018A0 /* Today's Cat Mood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Today's Cat Mood.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2005F0692BAB4672001018A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2005F06B2BAB4672001018A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2005F06D2BAB4672001018A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2005F06D2BAB4672001018A0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2005F0702BAB4672001018A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2005F0722BAB4673001018A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2005F0752BAB4673001018A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2005F0772BAB4673001018A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2099AE302BAB4AF90006A3B7 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		2099AE352BAB52D80006A3B7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		2005F0682BAB4672001018A0 /* Today's Cat Mood */ = {
 			isa = PBXGroup;
 			children = (
-				2005F0692BAB4672001018A0 /* AppDelegate.swift */,
-				2005F06B2BAB4672001018A0 /* SceneDelegate.swift */,
-				2005F06D2BAB4672001018A0 /* ViewController.swift */,
-				2005F06F2BAB4672001018A0 /* Main.storyboard */,
+				2099AE322BAB4F930006A3B7 /* ViewControllers */,
+				2099AE332BAB4FA90006A3B7 /* App */,
+				2099AE342BAB526F0006A3B7 /* Storyboards */,
 				2005F0722BAB4673001018A0 /* Assets.xcassets */,
-				2005F0742BAB4673001018A0 /* LaunchScreen.storyboard */,
-				2005F0772BAB4673001018A0 /* Info.plist */,
+				2099AE372BAB52DC0006A3B7 /* Services */,
 			);
 			path = "Today's Cat Mood";
+			sourceTree = "<group>";
+		};
+		2099AE322BAB4F930006A3B7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2005F06D2BAB4672001018A0 /* MainViewController.swift */,
+				2099AE302BAB4AF90006A3B7 /* DetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2099AE332BAB4FA90006A3B7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2005F0692BAB4672001018A0 /* AppDelegate.swift */,
+				2005F06B2BAB4672001018A0 /* SceneDelegate.swift */,
+				2005F0772BAB4673001018A0 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2099AE342BAB526F0006A3B7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2005F06F2BAB4672001018A0 /* Main.storyboard */,
+				2005F0742BAB4673001018A0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2099AE372BAB52DC0006A3B7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2099AE352BAB52D80006A3B7 /* NetworkManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2005F06E2BAB4672001018A0 /* ViewController.swift in Sources */,
+				2099AE362BAB52D80006A3B7 /* NetworkManager.swift in Sources */,
+				2005F06E2BAB4672001018A0 /* MainViewController.swift in Sources */,
 				2005F06A2BAB4672001018A0 /* AppDelegate.swift in Sources */,
 				2005F06C2BAB4672001018A0 /* SceneDelegate.swift in Sources */,
+				2099AE312BAB4AF90006A3B7 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,12 +333,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Today's Cat Mood/Info.plist";
+				INFOPLIST_FILE = "Today's Cat Mood/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +346,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "KobelevaDaria.Today-s-Cat-Mood";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,12 +364,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Today's Cat Mood/Info.plist";
+				INFOPLIST_FILE = "Today's Cat Mood/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,9 +377,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "KobelevaDaria.Today-s-Cat-Mood";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
